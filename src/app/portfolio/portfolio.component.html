@@ -1,0 +1,90 @@
+<app-mynav [dataparent]="data"></app-mynav>
+<div (mouseenter)="navfun()" class="theportfolio py-5">
+  <div class="title text-center">
+    <h2 class="mb-0">PORTFOLIO COMPONENT</h2>
+    <div class="the-star p-3 text-center mt-0">
+      <span class="my-star position-relative"
+        ><i class="color fa-solid fa-star"></i
+      ></span>
+    </div>
+  </div>
+  <div class="container text-center py-5">
+    <div class="row g-4">
+      <div (click)="open('poert1.png')" class="col-md-6 col-lg-4">
+        <div class="inner rounded position-relative bg-danger overflow-hidden">
+          <div>
+            <img src="./assets/images/poert1.png" class="w-100" alt="" />
+          </div>
+
+          <div class="layer">
+            <i class="fs-1 text-light fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div (click)="open('port3.png')" class="col-md-6 col-lg-4">
+        <div class="inner rounded position-relative bg-danger overflow-hidden">
+          <div>
+            <img src="./assets/images/port3.png" class="w-100" alt="" />
+          </div>
+
+          <div class="layer">
+            <i class="fs-1 text-light fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div (click)="open('port2.png')" class="col-md-6 col-lg-4">
+        <div class="inner rounded position-relative bg-danger overflow-hidden">
+          <div>
+            <img src="./assets/images/port2.png" class="w-100" alt="" />
+          </div>
+
+          <div class="layer">
+            <i class="fs-1 text-light fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div (click)="open('poert1.png')" class="col-md-6 col-lg-4">
+        <div class="inner rounded position-relative bg-danger overflow-hidden">
+          <div>
+            <img src="./assets/images/poert1.png" class="w-100" alt="" />
+          </div>
+
+          <div class="layer">
+            <i class="fs-1 text-light fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div (click)="open('port3.png')" class="col-md-6 col-lg-4">
+        <div class="inner rounded position-relative bg-danger overflow-hidden">
+          <div>
+            <img src="./assets/images/port3.png" class="w-100" alt="" />
+          </div>
+
+          <div class="layer">
+            <i class="fs-1 text-light fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div (click)="open('port2.png')" class="col-md-6 col-lg-4">
+        <div class="inner rounded position-relative bg-danger overflow-hidden">
+          <div>
+            <img src="./assets/images/port2.png" class="w-100" alt="" />
+          </div>
+
+          <div class="layer">
+            <i class="fs-1 text-light fa-solid fa-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @if (ischeecked==true) {
+  <div
+    #light
+    (click)="ligthfunc($event)"
+    class="light d-flex align-items-center justify-content-center"
+  >
+    <img [src]="theCurentImg" width="600px" alt="the portfolio image" />
+  </div>
+  }
+</div>

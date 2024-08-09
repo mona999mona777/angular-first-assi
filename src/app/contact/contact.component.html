@@ -1,0 +1,58 @@
+<app-mynav [dataparent]="data"></app-mynav>
+<div (mouseenter)="navfun()" class="the-contact py-5">
+  <div class="title text-center">
+    <h2 class="mb-0">CONATCT SECTION</h2>
+    <div class="the-star p-3 text-center mt-0">
+      <span class="my-star position-relative"
+        ><i class="color fa-solid fa-star"></i
+      ></span>
+    </div>
+  </div>
+  <div class="thecontact-content">
+    <div class="container w-50 my-5">
+      <form>
+        <p #prag1 class="apper">userName:</p>
+        <input
+          #input1
+          (input)="inputfun1()"
+          class="overflow-hidden form-control mb-3"
+          type="text"
+          placeholder="userName"
+          name="name"
+          autocomplete="off"
+        />
+        <p #prag2 class="apper">userAge:</p>
+        <input
+          #input2
+          (input)="inputfun2()"
+          class="overflow-hidden form-control mb-3"
+          type="text"
+          placeholder="userAge"
+          name="age"
+          autocomplete="off"
+        />
+        <p #prag3 class="apper">userEmail:</p>
+        <input
+          #input3
+          (input)="inputfun3()"
+          class="overflow-hidden form-control mb-3"
+          type="text"
+          placeholder="userEmail"
+          name="email"
+          autocomplete="off"
+        />
+        <p #prag4 class="apper">userPassword:</p>
+        <input
+          #input4
+          (input)="inputfun4()"
+          class="overflow-hidden form-control mb-3"
+          type="text"
+          placeholder="userPassword"
+          name="password"
+          autocomplete="off"
+        />
+        <button type="button" class="my-btn p-2 rounded">send Message</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'assiangularfirst' title`, () => {
+  it(`should have the 'firstAssi' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('assiangularfirst');
+    expect(app.title).toEqual('firstAssi');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, assiangularfirst');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, firstAssi');
   });
 });
